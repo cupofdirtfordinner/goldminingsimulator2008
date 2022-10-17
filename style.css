@@ -4,29 +4,43 @@ html, body {
   background-color: #4d8da3;
 }
 
-goldarea {
+.layout {
+  outline: 2px solid black;
+  margin:3px;
+}
+
+#goldarea {
   width:100%;
   height:10%;
   float:top;
+  text-align:center;
 
   background-color:orange;
 }
 
-mines {
-  width:50%;
+#mines {
+  width:calc(50% - 6px);
   height:90%;
   float:left;
 }
 
-stats {
-  width:50%;
+#stats {
+  width:calc(50% - 6px);
   height:90%;
   float:right;
 }
 
-#goldbutton{
-  background-color: yellow;
+#shop {
+  height:calc(45% - 15px);
+  overflow:auto;
+  /*white-space:nowrap*/
 }
+#realstats {
+  height:calc(45% - 15px);
+  overflow-y:auto; 
+}
+
+#goldbutton{background-color: yellow;}
 
 button {
   padding: 20px;

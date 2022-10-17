@@ -2,29 +2,50 @@
 <html>
 
 <head>
-  <title>replit</title>
+  <title>gold mining simulator 2008</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <!--kill your family-->
 
 <body>
   <script src="script.js"></script>
 
-  <div id="goldarea">
-    <p id="goldDisplay">gold:</p> <span id=goldcounter></span>
+  <div id="goldarea" class="layout">
+    <!--the "layout" class determines which divs will have a border.-->
+    <p id="goldDisplay">gold:</p><span id=goldcounter></span>
   </div>
 
-  
-  <div id="mines">
-    <button onclick="goldbutton()" id="goldbutton">butt</button>
-    <button onclick="addminers()" id="minerbutton">ILLEGAL butt</button>
+
+  <div id="mines" class="layout">
+    <button onclick="goldbutton()" id="goldbutton">mine gold</button>
+    <button onclick="addminers()" id="minerbutton">hire miner</button>
+    <button onclick="updateStats()" id="asdfasdf">test</button>
     <div id="miners">
-      <img src="miner1.png">
+      <img src="images/miner.png" id="minerimgid">
     </div>
   </div>
 
-  <div id="stats">
-
+  <div id="stats" class="layout">
+    <div id="shop">
+      <button>awwwagga</button>
+      <button>awwwagga</button>
+      <button>awwwagga</button>
+      <button>awwwagga</button>
+      <button>awwwagga</button>
+      <button>awwwagga</button>
+      <button>awwwagga</button>
+      <button>awwwagga</button>
+      <button>awwwagga</button>
+      <button>awwwagga</button>
+      <button>awwwagga</button>
+      <button>awwwagga</button>
+      <button>awwwagga</button>
+    </div>
+    <div id="realstats" class="layout">
+      <p>gold per second:</p><span id="gpscount"></span>
+      <p>miners:</p><span id="minercount"></span>
+    </div>
   </div>
 
 </body>
