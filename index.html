@@ -4,9 +4,9 @@
 <head>
   <title>gold mining simulator 2008</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="images/favicon.png">
 </head>
 
-<!--kill your family-->
 
 <body>
   <script src="script.js"></script>
@@ -22,31 +22,26 @@
     <button onclick="addminers()" id="minerbutton">hire miner</button>
     <button onclick="updateStats()" id="asdfasdf">test</button>
     <div id="miners">
-      <img src="images/miner.png" id="minerimgid">
+      <img src="images/farmer.png" id="minerimgid">
     </div>
   </div>
 
   <div id="stats" class="layout">
     <div id="shop">
-      <button>awwwagga</button>
-      <button>awwwagga</button>
-      <button>awwwagga</button>
-      <button>awwwagga</button>
-      <button>awwwagga</button>
-      <button>awwwagga</button>
-      <button>awwwagga</button>
-      <button>awwwagga</button>
-      <button>awwwagga</button>
-      <button>awwwagga</button>
-      <button>awwwagga</button>
-      <button>awwwagga</button>
-      <button>awwwagga</button>
+      <button onclick="upgrade1()" id="upgrade1"> Upgrade Miners</button>
+      <!--it works now, removed placeholders cuz they were useless-->
     </div>
+
     <div id="realstats" class="layout">
-      <p>gold per second:</p><span id="gpscount"></span>
-      <p>miners:</p><span id="minercount"></span>
+
+      <img id="grungstob" src="images/grungstob.png" alt="grungstob">
+      <div id="statwindow">
+        <p>gold per second:</p><span id="gpscount"></span>
+        <p>miners:</p><span id="minercount"></span>
+      </div>
     </div>
   </div>
+
 
 </body>
 

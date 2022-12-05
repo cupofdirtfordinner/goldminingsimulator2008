@@ -1,16 +1,24 @@
 html, body {
-  height: 100%;
-  width: 100%;
+  height: 98%;
+
   background-color: #4d8da3;
 }
 
 .layout {
   outline: 2px solid black;
   margin:3px;
+  border-radius: 8px;
+}
+
+img, image {
+  image-rendering: -moz-crisp-edges;
+image-rendering: -moz-crisp-edges;
+image-rendering: -o-crisp-edges;
+image-rendering: -webkit-optimize-contrast;
+-ms-interpolation-mode: nearest-neighbor;
 }
 
 #goldarea {
-  width:100%;
   height:10%;
   float:top;
   text-align:center;
@@ -30,19 +38,55 @@ html, body {
   float:right;
 }
 
-#shop {
-  height:calc(45% - 15px);
-  overflow:auto;
-  /*white-space:nowrap*/
-}
 #realstats {
   height:calc(45% - 15px);
-  overflow-y:auto; 
+  overflow-y:auto;
+  position:relative;
+  overflow:visible;
 }
 
 #goldbutton{background-color: yellow;}
 
 button {
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 8px;
+}
+
+#grungstob {
+  position:absolute;
+  top:-96px;
+  z-index: 99999999999999999; /*one million bajillion 😱😱*/
+}
+
+#grungstob:hover { /*spinning grungstob is a staple and part of gmsn08's brand*/
+  animation-name: wheee;
+  animation-duration: .5s;
+  animation-delay: 4s;
+}
+
+@keyframes wheee {
+0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*Chat*/
+/*idk who left the comment above but what do it mean -l*/
+
+#shop {
+  height:calc(45% - 15px);
+  overflow:auto;
+  position:relative
+
+  /*white-space:nowrap*/
+}  
+
+#statwindow {
+  overflow:auto;
+  height:100%;
 }
